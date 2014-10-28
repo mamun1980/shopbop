@@ -32,7 +32,7 @@ class MySpider(scrapy.Spider):
         "http://www.shopbop.com/boutique-designer-boutique-shoes-flats/br/v=1/2534374302159461.htm",
         "http://www.shopbop.com/boutique-designer-boutique-shoes-pumps-heels/br/v=1/2534374302159502.htm",
         "http://www.shopbop.com/boutique-designer-boutique-shoes-sandals/br/v=1/2534374302159466.htm",
-        "http://www.shopbop.com/boutique-designer-boutique-shoes-sport/br/v=1/2534374302159470.htm".
+        "http://www.shopbop.com/boutique-designer-boutique-shoes-sport/br/v=1/2534374302159470.htm",
         "http://www.shopbop.com/boutique-designer-boutique-shoes-clogs/br/v=1/13798.htm",
 
         # http://www.shopbop.com/boutique-designer-boutique-bags/br/v=1/2534374302159433.htm
