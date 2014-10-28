@@ -45,7 +45,7 @@ class MySpider(scrapy.Spider):
         product_class['track_stock'] = True
         product['product_class'] = product_class
 
-        import pdb; pdb.set_trace()
+        # import pdb; pdb.set_trace()
         cat_slug = ''
         cat_full_name = ' '
         for cat_name in cat_names:    

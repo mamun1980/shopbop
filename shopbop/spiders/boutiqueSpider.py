@@ -25,13 +25,14 @@ class MySpider(scrapy.Spider):
         "http://www.shopbop.com/boutique-designer-boutique-clothes-tops/br/v=1/2534374302159473.htm",
         "http://www.shopbop.com/boutique-designer-clothing-vests/br/v=1/2534374302196672.htm",
 
+
         # http://www.shopbop.com/boutique-designer-boutique-shoes/br/v=1/2534374302159435.htm
         "http://www.shopbop.com/boutique-designer-boutique-shoes-booties/br/v=1/2534374302159442.htm",
         "http://www.shopbop.com/boutique-designer-boutique-shoes-boots/br/v=1/2534374302159471.htm",
         "http://www.shopbop.com/boutique-designer-boutique-shoes-flats/br/v=1/2534374302159461.htm",
         "http://www.shopbop.com/boutique-designer-boutique-shoes-pumps-heels/br/v=1/2534374302159502.htm",
         "http://www.shopbop.com/boutique-designer-boutique-shoes-sandals/br/v=1/2534374302159466.htm",
-        "http://www.shopbop.com/boutique-designer-boutique-shoes-sport/br/v=1/2534374302159470.htm",
+        "http://www.shopbop.com/boutique-designer-boutique-shoes-sport/br/v=1/2534374302159470.htm".
         "http://www.shopbop.com/boutique-designer-boutique-shoes-clogs/br/v=1/13798.htm",
 
         # http://www.shopbop.com/boutique-designer-boutique-bags/br/v=1/2534374302159433.htm

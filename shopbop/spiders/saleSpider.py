@@ -7,7 +7,7 @@ class ClothProductSpider(CrawlSpider):
     name = "product_sale"
     allowed_domains = ["www.shopbop.com"]
     start_urls = [
-        # "http://www.shopbop.com/shop-category-sale/br/v=1/2534374302025763.htm",
+        "http://www.shopbop.com/shop-category-sale/br/v=1/2534374302025763.htm",
         "http://www.shopbop.com/new-to-sale/br/v=1/2534374302175438.htm",
         "http://www.shopbop.com/sale-clothing/br/v=1/2534374302155173.htm",
         "http://www.shopbop.com/sale-clothing-denim/br/v=1/2534374302076347.htm",
@@ -257,6 +257,7 @@ class ClothProductSpider(CrawlSpider):
         "http://www.shopbop.com/sale-50-percent-off/br/v=1/2534374302029886.htm",
         "http://www.shopbop.com/sale-60-percent-off/br/v=1/2534374302207491.htm",
         "http://www.shopbop.com/sale-70-percent-off/br/v=1/2534374302029887.htm",
+
     ]
 
     rules = (

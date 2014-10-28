@@ -7,7 +7,7 @@ class ClothProductSpider(CrawlSpider):
     name = "product_whatsnew"
     allowed_domains = ["www.shopbop.com"]
     start_urls = [
-        # "http://www.shopbop.com/whats-new/br/v=1/2534374302029428.htm",
+        "http://www.shopbop.com/whats-new/br/v=1/2534374302029428.htm",
         "http://www.shopbop.com/whats-new-clothing/br/v=1/2534374302155172.htm",
         "http://www.shopbop.com/whats-new-clothing-activewear/br/v=1/2534374302090400.htm",
         "http://www.shopbop.com/whats-new-dresses/br/v=1/2534374302090413.htm",
@@ -64,6 +64,12 @@ class ClothProductSpider(CrawlSpider):
         "http://www.shopbop.com/whats-new-designer-boutique-shoes/br/v=1/2534374302180311.htm",
         "http://www.shopbop.com/whats-new-designer-boutique-bags/br/v=1/2534374302180312.htm",
         "http://www.shopbop.com/whats-new-designer-boutique-accessories/br/v=1/2534374302180219.htm",
+
+        # "http://www.shopbop.com/special-top-sellers/br/v=1/2534374302073392.htm",
+        # "http://www.shopbop.com/whats-new-top-sellers-clothes/br/v=1/2534374302173220.htm",
+        # "http://www.shopbop.com/whats-new-top-sellers-shoes/br/v=1/2534374302173221.htm",
+        # "http://www.shopbop.com/whats-new-top-sellers-bags/br/v=1/2534374302173218.htm",
+        # "http://www.shopbop.com/whats-new-top-sellers-accessories/br/v=1/2534374302173219.htm",
 
     ]
 
