@@ -7,8 +7,8 @@ class ClothProductSpider(CrawlSpider):
     name = "product_whatsnew"
     allowed_domains = ["www.shopbop.com"]
     start_urls = [
-        "http://www.shopbop.com/whats-new/br/v=1/2534374302029428.htm",
-        "http://www.shopbop.com/whats-new-clothing/br/v=1/2534374302155172.htm",
+        #"http://www.shopbop.com/whats-new/br/v=1/2534374302029428.htm",
+        #"http://www.shopbop.com/whats-new-clothing/br/v=1/2534374302155172.htm",
         "http://www.shopbop.com/whats-new-clothing-activewear/br/v=1/2534374302090400.htm",
         "http://www.shopbop.com/whats-new-dresses/br/v=1/2534374302090413.htm",
         "http://www.shopbop.com/whats-new-clothing-jackets-coats/br/v=1/2534374302090402.htm",
@@ -24,7 +24,7 @@ class ClothProductSpider(CrawlSpider):
         "http://www.shopbop.com/whats-new-tops/br/v=1/2534374302090416.htm",
         "http://www.shopbop.com/whats-new-clothing-vests/br/v=1/2534374302196581.htm",
 
-        "http://www.shopbop.com/whats-new-shoes/br/v=1/2534374302090411.htm",
+        #"http://www.shopbop.com/whats-new-shoes/br/v=1/2534374302090411.htm",
         "http://www.shopbop.com/whats-new-shoes-booties/br/v=1/2534374302090509.htm",
         "http://www.shopbop.com/whats-new-shoes-boots-all/br/v=1/2534374302090510.htm",
         "http://www.shopbop.com/whats-new-shoes-flats/br/v=1/2534374302090507.htm",
@@ -34,7 +34,7 @@ class ClothProductSpider(CrawlSpider):
         "http://www.shopbop.com/whats-new-shoes-wedges/br/v=1/13208.htm",
         "http://www.shopbop.com/whats-new-shoes-rain-wear-cold-weather/br/v=1/28966.htm",
 
-        "http://www.shopbop.com/whats-new-bags/br/v=1/2534374302090393.htm",
+        #"http://www.shopbop.com/whats-new-bags/br/v=1/2534374302090393.htm",
         "http://www.shopbop.com/whats-new-handbags-backpacks/br/v=1/2534374302090464.htm",
         "http://www.shopbop.com/whats-new-handbags-clutches/br/v=1/2534374302090466.htm",
         "http://www.shopbop.com/whats-new-handbags-small-accessories/br/v=1/2534374302090468.htm",
@@ -45,7 +45,7 @@ class ClothProductSpider(CrawlSpider):
         "http://www.shopbop.com/whats-new-handbags-totes/br/v=1/2534374302090469.htm",
         "http://www.shopbop.com/whats-new-handbags-wallets/br/v=1/2534374302090460.htm",
 
-        "http://www.shopbop.com/whats-new-accessories/br/v=1/2534374302090405.htm",
+        #"http://www.shopbop.com/whats-new-accessories/br/v=1/2534374302090405.htm",
         "http://www.shopbop.com/whats-new-accessories-belts/br/v=1/2534374302090425.htm",
         "http://www.shopbop.com/whats-new-accessories-hats/br/v=1/2534374302090424.htm",
         "http://www.shopbop.com/whats-new-accessories-hair/br/v=1/2534374302090423.htm",
@@ -59,7 +59,7 @@ class ClothProductSpider(CrawlSpider):
         "http://www.shopbop.com/whats-new-accessories-tech/br/v=1/2534374302090428.htm",
         "http://www.shopbop.com/whats-new-jewelry-watches/br/v=1/2534374302090492.htm",
 
-        "http://www.shopbop.com/whats-new-designer-boutique/br/v=1/2534374302180211.htm",
+        #"http://www.shopbop.com/whats-new-designer-boutique/br/v=1/2534374302180211.htm",
         "http://www.shopbop.com/whats-new-designer-boutique-clothing/br/v=1/2534374302180263.htm",
         "http://www.shopbop.com/whats-new-designer-boutique-shoes/br/v=1/2534374302180311.htm",
         "http://www.shopbop.com/whats-new-designer-boutique-bags/br/v=1/2534374302180312.htm",
