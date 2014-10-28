@@ -99,7 +99,7 @@ class ProductStoragePipeline(object):
             sb_prod_class = session.add(new_pc)
             pass
 
-        import pdb; pdb.set_trace()
+        # import pdb; pdb.set_trace()
         try:
             sb_prod_cat_q = session.query(Category).filter(Category.slug == product_category['slug'])
             sb_prod_cat = sb_prod_cat_q.first()
@@ -245,7 +245,7 @@ class ProductStoragePipeline(object):
 
                     related_product = RelatedProduct(**related_pro)
                     session.add(related_product)
-                import pdb; pdb.set_trace();
+                # import pdb; pdb.set_trace();
 
                 session.commit()
         except Exception, e:

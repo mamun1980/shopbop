@@ -96,7 +96,7 @@ class ClothProductSpider(CrawlSpider):
 
         product_class = ProductClass()
         product_cat = ProductCategory()
-        # import pdb; pdb.set_trace()
+
         cat_names = response.xpath('//*[@id="right-column"]/div[@class="breadcrumbs"]/ul/li')
         
         try:

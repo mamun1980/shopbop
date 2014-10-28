@@ -7,7 +7,7 @@ import re
 class MySpider(scrapy.Spider):
     name = "hello"
     allowed_domains = ["www.shopbop.com"]
-    start_urls = ["http://www.shopbop.com/skinny-love-playsuit-keepsake/vp/v=1/1527482533.htm?folderID=2534374302090392&fm=other-shopbysize&colorId=12867",]
+    start_urls = ["http://www.shopbop.com/nat-reversible-crop-top-alc/vp/v=1/1510527287.htm?folderID=2534374302175438&fm=other-shopbysize&colorId=12397",]
 
     # def parse(self, request):
     #     urls = response.xpath('//*[@id="leftNavigation"]/ul/li/a')
