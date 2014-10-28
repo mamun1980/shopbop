@@ -201,7 +201,7 @@ class ClothProductSpider(CrawlSpider):
             cnlist = []
             for cn in cnamesplit:
                 if cn != "":
-                    cnlist.append(cn.strip().replace("'",""))
+                    cnlist.append(cn.strip().replace(":","").replace("'",""))
 
             csname = "-".join(cnlist)
             cat_slug = cat_slug + csname.lower() +"/"

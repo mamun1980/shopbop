@@ -7,7 +7,7 @@ import re
 class MySpider(scrapy.Spider):
     name = "hello"
     allowed_domains = ["www.shopbop.com"]
-    start_urls = ["http://www.shopbop.com/nat-reversible-crop-top-alc/vp/v=1/1510527287.htm?folderID=2534374302175438&fm=other-shopbysize&colorId=12397",]
+    start_urls = ["http://www.shopbop.com/ski-boot-one-by/vp/v=1/1516825825.htm?folderID=33281&fm=other-shopbysize&colorId=12867",]
 
     # def parse(self, request):
     #     urls = response.xpath('//*[@id="leftNavigation"]/ul/li/a')
@@ -45,7 +45,7 @@ class MySpider(scrapy.Spider):
         product_class['track_stock'] = True
         product['product_class'] = product_class
 
-        # import pdb; pdb.set_trace()
+        import pdb; pdb.set_trace()
         cat_slug = ''
         cat_full_name = ' '
         for cat_name in cat_names:    
@@ -58,7 +58,7 @@ class MySpider(scrapy.Spider):
             cnlist = []
             for cn in cnamesplit:
                 if cn != "":
-                    cnlist.append(cn.strip().replace("'",""))
+                    cnlist.append(cn.strip().replace(":","").replace("'",""))
 
             csname = "-".join(cnlist)
             cat_slug = cat_slug + csname.lower() +"/"
