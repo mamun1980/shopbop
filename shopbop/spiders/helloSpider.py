@@ -7,7 +7,7 @@ import re
 class MySpider(scrapy.Spider):
     name = "hello"
     allowed_domains = ["www.shopbop.com"]
-    start_urls = ["http://www.shopbop.com/wedge-thin-flip-flop-tory/vp/v=1/845524441939578.htm?fm=search-shopbysize",]
+    start_urls = ["http://www.shopbop.com/dog-collar-friedanellie/vp/v=1/1514827312.htm?folderID=32587&fm=other&colorId=27271",]
 
     # def parse(self, request):
     #     urls = response.xpath('//*[@id="leftNavigation"]/ul/li/a')
@@ -31,6 +31,7 @@ class MySpider(scrapy.Spider):
 
         product_class = ProductClass()
         product_cat = ProductCategory()
+        # import pdb; pdb.set_trace()
         cat_names = response.xpath('//*[@id="right-column"]/div[@class="breadcrumbs"]/ul/li')
         
         try:
@@ -44,7 +45,7 @@ class MySpider(scrapy.Spider):
         product_class['track_stock'] = True
         product['product_class'] = product_class
 
-        
+        # import pdb; pdb.set_trace()
         cat_slug = ''
         cat_full_name = ' '
         for cat_name in cat_names:    
@@ -53,7 +54,7 @@ class MySpider(scrapy.Spider):
             except IndexError:
                 cname = cat_name.xpath('span/text()').extract()[0].strip()                
                 pass
-            cname = re.sub(r"[:,'\/]","",cname.strip())
+            cname = re.sub(r"[:,'\/&]","",cname.strip())
             cnamesplit = re.split(r"[ /]",cname)
             cnlist = []
             for cn in cnamesplit:
@@ -71,7 +72,7 @@ class MySpider(scrapy.Spider):
         product_cat = {'full_name': cat_full_name, 
                         'slug': cat_slug, 
                         'name': cat_full_name.split(" > ")[-1]}
-
+        import pdb; pdb.set_trace()
         product['product_category'] = product_cat
 
 
@@ -141,7 +142,6 @@ class MySpider(scrapy.Spider):
                     else:
                         img_url = root_img_url
                     product_image['thumb_url'] = img_url
-
                     if '_37x65' in img_url:
                         small_image_url = img_url.replace("_37x65","_150x296")
                         product_image['small_image_url'] = small_image_url.replace("_q","_p")
@@ -162,8 +162,6 @@ class MySpider(scrapy.Spider):
                         product_image['color_code'] = prcolor['color_code']
                         thumb_order = thumb_order + 1
                         product_images.append(product_image)
-
-
                     # thumb_order = 0
 
         product['images'] = product_images
@@ -192,7 +190,7 @@ class MySpider(scrapy.Spider):
             fittext = fittext + allfit
         sizenfit['fit'] = fittext
         product['size_n_fit'] = sizenfit
-        import pdb; pdb.set_trace()
+        # import pdb; pdb.set_trace()
         try:
             price = response.xpath('//*[@id="productPrices"]/div[@class="priceBlock"]/span[@class="salePrice"]/text()')[0].extract().strip().replace(",","")
         except IndexError:

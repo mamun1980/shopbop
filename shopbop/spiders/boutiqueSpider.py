@@ -184,7 +184,7 @@ class MySpider(scrapy.Spider):
             except IndexError:
                 cname = cat_name.xpath('span/text()').extract()[0].strip()                
                 pass
-            cname = re.sub(r"[:,'\/]","",cname.strip())
+            cname = re.sub(r"[:,'\/&]","",cname.strip())
             cnamesplit = re.split(r"[ /]",cname)
             cnlist = []
             for cn in cnamesplit:
