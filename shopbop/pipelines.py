@@ -62,7 +62,7 @@ class ProductStoragePipeline(object):
         pid = item['product_id']
         product_sku = item['product_sku']
         brand_name = item['brand_name']
-        product_title = re.sub(r"[:,'\/]","",item['title'])
+        product_title = re.sub(r"[:,'\/&]","",item['title'])
         product_description = item['description']
 
         desc_replace_Shopbop = re.sub("Shopbop","Robecart",product_description.strip())
