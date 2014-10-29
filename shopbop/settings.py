@@ -25,6 +25,6 @@ DATABASE = {'drivername': 'postgres',
             'port': '5432',
             'username': 'postgres',
             'password': 'qweqwe',
-            'database': 'robecart_local'}
+            'database': 'robecart_hello'}
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'shopbop (+http://www.yourdomain.com)'
