@@ -345,11 +345,13 @@ class ClothProductSpider(CrawlSpider):
             except IndexError:
                 cname = cat_name.xpath('span/text()').extract()[0].strip()                
                 pass
+            cname = re.sub(r"[:,'\/]","",cname.strip())
             cnamesplit = re.split(r"[ /]",cname)
             cnlist = []
             for cn in cnamesplit:
                 if cn != "":
-                    cnlist.append(cn.strip().replace(":","").replace("'",""))
+                    # cn = re.sub(r"[:,'/\\]","",cn.strip())
+                    cnlist.append(cn)
 
             csname = "-".join(cnlist)
             cat_slug = cat_slug + csname.lower() +"/"
@@ -431,15 +433,26 @@ class ClothProductSpider(CrawlSpider):
                     else:
                         img_url = root_img_url
                     product_image['thumb_url'] = img_url
-                    small_image_url = img_url.replace("_37x65","_150x296")
-                    product_image['small_image_url'] = small_image_url.replace("_q","_p")
-                    product_image['image_url'] = img_url.replace("_37x65","_336x596")
-                    product_image['big_image_url'] = img_url.replace("_37x65","")
-                    product_image['original'] = 'images/products/t-shirt2.png'
-                    product_image['display_order'] = thumb_order
-                    product_image['color_code'] = prcolor['color_code']
-                    thumb_order = thumb_order + 1
-                    product_images.append(product_image)
+                    if '_37x65' in img_url:
+                        small_image_url = img_url.replace("_37x65","_150x296")
+                        product_image['small_image_url'] = small_image_url.replace("_q","_p")
+                        product_image['image_url'] = img_url.replace("_37x65","_336x596")
+                        product_image['big_image_url'] = img_url.replace("_37x65","")
+                        product_image['original'] = 'images/products/t-shirt2.png'
+                        product_image['display_order'] = thumb_order
+                        product_image['color_code'] = prcolor['color_code']
+                        thumb_order = thumb_order + 1
+                        product_images.append(product_image)
+                    elif '_29x58' in img_url:
+                        small_image_url = img_url.replace("_29x58","_150x296")
+                        product_image['small_image_url'] = small_image_url.replace("_q","_p")
+                        product_image['image_url'] = img_url.replace("_29x58","_336x596")
+                        product_image['big_image_url'] = img_url.replace("_29x58","")
+                        product_image['original'] = 'images/products/t-shirt2.png'
+                        product_image['display_order'] = thumb_order
+                        product_image['color_code'] = prcolor['color_code']
+                        thumb_order = thumb_order + 1
+                        product_images.append(product_image)
                     # thumb_order = 0
 
         product['images'] = product_images
