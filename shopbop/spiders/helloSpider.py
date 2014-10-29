@@ -190,7 +190,7 @@ class MySpider(scrapy.Spider):
             fittext = fittext + allfit
         sizenfit['fit'] = fittext
         product['size_n_fit'] = sizenfit
-        import pdb; pdb.set_trace()
+        # import pdb; pdb.set_trace()
         try:
             price = response.xpath('//*[@id="productPrices"]/div[@class="priceBlock"]/span[@class="salePrice"]/text()')[0].extract().strip().replace(",","")
         except IndexError:
