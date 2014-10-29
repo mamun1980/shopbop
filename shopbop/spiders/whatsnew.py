@@ -33,7 +33,8 @@ class ClothProductSpider(CrawlSpider):
         "http://www.shopbop.com/whats-new-shoes-sneakers/br/v=1/2534374302090512.htm",
         "http://www.shopbop.com/whats-new-shoes-wedges/br/v=1/13208.htm",
         "http://www.shopbop.com/whats-new-shoes-rain-wear-cold-weather/br/v=1/28966.htm",
-
+        "http://www.shopbop.com/whats-new-shoes-winter-boots/br/v=1/33280.htm",
+        
         #"http://www.shopbop.com/whats-new-bags/br/v=1/2534374302090393.htm",
         "http://www.shopbop.com/whats-new-handbags-backpacks/br/v=1/2534374302090464.htm",
         "http://www.shopbop.com/whats-new-handbags-clutches/br/v=1/2534374302090466.htm",

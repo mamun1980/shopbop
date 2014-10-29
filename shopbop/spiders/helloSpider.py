@@ -31,7 +31,7 @@ class MySpider(scrapy.Spider):
 
         product_class = ProductClass()
         product_cat = ProductCategory()
-        # import pdb; pdb.set_trace()
+
         cat_names = response.xpath('//*[@id="right-column"]/div[@class="breadcrumbs"]/ul/li')
         
         try:
@@ -72,7 +72,7 @@ class MySpider(scrapy.Spider):
         product_cat = {'full_name': cat_full_name, 
                         'slug': cat_slug, 
                         'name': cat_full_name.split(" > ")[-1]}
-        import pdb; pdb.set_trace()
+        # import pdb; pdb.set_trace()
         product['product_category'] = product_cat
 
 
