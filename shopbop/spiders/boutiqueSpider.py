@@ -1,10 +1,13 @@
 import scrapy
 # from shopbop.SeleniumSpider import SeleniumSpider
-from shopbop.items import *
 from shopbop.spiders.helper import parse_product as parse
+from scrapy.contrib.spiders import CrawlSpider, Rule
+from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
+from scrapy.selector import HtmlXPathSelector
+from shopbop.items import *
 import re
 
-class MySpider(scrapy.Spider):
+class ClothProductSpider(CrawlSpider):
     name = "prdoduct_boutique"
     allowed_domains = ["www.shopbop.com"]
     start_urls = [
@@ -60,10 +63,6 @@ class MySpider(scrapy.Spider):
         "http://www.shopbop.com/boutique-designer-boutique-accessories-scarves-wraps/br/v=1/2534374302159520.htm",
         "http://www.shopbop.com/boutique-designer-boutique-accessories-tech-accessories/br/v=1/2534374302159517.htm",
 
-
-        #"http://www.shopbop.com/actions/designerindex/viewAlphabeticalDBDesigners.action",
-
-        #"http://www.shopbop.com/ci/4/wedding/bridal-and-wedding-2013.html",
         "http://www.shopbop.com/boutique-wedding-dresses/br/v=1/2534374302183381.htm",
         "http://www.shopbop.com/boutique-wedding-dresses-line/br/v=1/2534374302206018.htm",
         "http://www.shopbop.com/boutique-wedding-dresses-ball-gown/br/v=1/2534374302206020.htm",
@@ -140,10 +139,17 @@ class MySpider(scrapy.Spider):
         "http://www.shopbop.com/sale-one/br/v=1/2534374302187868.htm",
     ]
 
+    rules = (
+        Rule (SgmlLinkExtractor(allow=(),restrict_xpaths=('//*[@id="product-container"]',)), 
+            callback="parse_product"),
+
+        Rule (SgmlLinkExtractor(tags=('span'), attrs=('data-next-link'), unique=True, 
+            restrict_xpaths=('//*[@id="pagination-container-top"]/div[@class="pages"]')),),
+    )
     # def parse(self, request):
     #     urls = response.xpath('//*[@id="leftNavigation"]/ul/li/a')
 
-    def parse(self, response):
+    def parse_product(self, response):
         product = Product()
         
         path_product_info = response.xpath('//*[@id="product-information"]')

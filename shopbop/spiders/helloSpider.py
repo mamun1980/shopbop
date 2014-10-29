@@ -14,7 +14,6 @@ class MySpider(scrapy.Spider):
 
     def parse(self, response):
         product = Product()
-        import pdb; pdb.set_trace()
         
         path_product_info = response.xpath('//*[@id="product-information"]')
         path_product_price = response.xpath('//*[@id="productPrices"]')
@@ -32,7 +31,7 @@ class MySpider(scrapy.Spider):
 
         product_class = ProductClass()
         product_cat = ProductCategory()
-        
+        import pdb; pdb.set_trace()
         cat_names = response.xpath('//*[@id="right-column"]/div[@class="breadcrumbs"]/ul/li')
         
         try:
@@ -191,7 +190,7 @@ class MySpider(scrapy.Spider):
             fittext = fittext + allfit
         sizenfit['fit'] = fittext
         product['size_n_fit'] = sizenfit
-        # import pdb; pdb.set_trace()
+        import pdb; pdb.set_trace()
         try:
             price = response.xpath('//*[@id="productPrices"]/div[@class="priceBlock"]/span[@class="salePrice"]/text()')[0].extract().strip().replace(",","")
         except IndexError:
