@@ -7,13 +7,14 @@ import re
 class MySpider(scrapy.Spider):
     name = "hello"
     allowed_domains = ["www.shopbop.com"]
-    start_urls = ["http://www.shopbop.com/dog-collar-friedanellie/vp/v=1/1514827312.htm?folderID=32587&fm=other&colorId=27271",]
+    start_urls = ["http://www.shopbop.com/ribbon-stripe-print-lace-peasant/vp/v=1/1575197882.htm?folderID=2534374302052549&fm=other-shopbysize&colorId=10376",]
 
     # def parse(self, request):
     #     urls = response.xpath('//*[@id="leftNavigation"]/ul/li/a')
 
     def parse(self, response):
         product = Product()
+        import pdb; pdb.set_trace()
         
         path_product_info = response.xpath('//*[@id="product-information"]')
         path_product_price = response.xpath('//*[@id="productPrices"]')
@@ -31,7 +32,7 @@ class MySpider(scrapy.Spider):
 
         product_class = ProductClass()
         product_cat = ProductCategory()
-
+        
         cat_names = response.xpath('//*[@id="right-column"]/div[@class="breadcrumbs"]/ul/li')
         
         try:
@@ -39,13 +40,13 @@ class MySpider(scrapy.Spider):
         except IndexError:
             pclass = cat_names[0].xpath('a/@title').extract()[0]
             pass
-        product_class['name'] = pclass
-        product_class['slug'] = pclass.lower()
+        product_class['name'] = "Boutiques"
+        product_class['slug'] = "Boutiques".lower()
         product_class['requires_shipping'] = True
         product_class['track_stock'] = True
         product['product_class'] = product_class
 
-        # import pdb; pdb.set_trace()
+        import pdb; pdb.set_trace()
         cat_slug = ''
         cat_full_name = ' '
         for cat_name in cat_names:    

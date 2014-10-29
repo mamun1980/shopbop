@@ -10,7 +10,7 @@ class MySpider(scrapy.Spider):
     start_urls = [
         "http://www.shopbop.com/boutique-whats-new-db/br/v=1/2534374302052549.htm",
 
-        #"http://www.shopbop.com/boutique-designer-boutique-clothes/br/v=1/2534374302159436.htm",
+        "http://www.shopbop.com/boutique-designer-boutique-clothes/br/v=1/2534374302159436.htm",
         "http://www.shopbop.com/boutique-designer-clothes-jeans/br/v=1/2534374302159479.htm",
         "http://www.shopbop.com/boutique-designer-boutique-clothes-dresses/br/v=1/2534374302159512.htm",
         "http://www.shopbop.com/boutique-designer-boutique-clothes-jackets/br/v=1/2534374302159475.htm",
@@ -26,7 +26,7 @@ class MySpider(scrapy.Spider):
         "http://www.shopbop.com/boutique-designer-clothing-vests/br/v=1/2534374302196672.htm",
 
 
-        # http://www.shopbop.com/boutique-designer-boutique-shoes/br/v=1/2534374302159435.htm
+        "http://www.shopbop.com/boutique-designer-boutique-shoes/br/v=1/2534374302159435.htm",
         "http://www.shopbop.com/boutique-designer-boutique-shoes-booties/br/v=1/2534374302159442.htm",
         "http://www.shopbop.com/boutique-designer-boutique-shoes-boots/br/v=1/2534374302159471.htm",
         "http://www.shopbop.com/boutique-designer-boutique-shoes-flats/br/v=1/2534374302159461.htm",
@@ -35,7 +35,7 @@ class MySpider(scrapy.Spider):
         "http://www.shopbop.com/boutique-designer-boutique-shoes-sport/br/v=1/2534374302159470.htm",
         "http://www.shopbop.com/boutique-designer-boutique-shoes-clogs/br/v=1/13798.htm",
 
-        # http://www.shopbop.com/boutique-designer-boutique-bags/br/v=1/2534374302159433.htm
+        "http://www.shopbop.com/boutique-designer-boutique-bags/br/v=1/2534374302159433.htm",
         "http://www.shopbop.com/boutique-designer-boutique-bags-backpacks/br/v=1/2534374302159440.htm",
         "http://www.shopbop.com/boutique-designer-boutique-bags-black-handbags/br/v=1/2534374302159446.htm",
         "http://www.shopbop.com/boutique-designer-boutique-bags-clutches/br/v=1/2534374302159510.htm",
@@ -48,7 +48,7 @@ class MySpider(scrapy.Spider):
         "http://www.shopbop.com/boutique-designer-boutique-bags-weekend-bags/br/v=1/2534374302159467.htm",
         "http://www.shopbop.com/boutique-designer-bags-satchels/br/v=1/2534374302201401.htm",
 
-        # http://www.shopbop.com/boutique-designer-accessories/br/v=1/2534374302159432.htm
+        "http://www.shopbop.com/boutique-designer-accessories/br/v=1/2534374302159432.htm",
         "http://www.shopbop.com/boutique-designer-boutique-accessories-jewelry/br/v=1/2534374302159487.htm",
         "http://www.shopbop.com/boutique-designer-boutique-accessories-belts/br/v=1/2534374302159505.htm",
         "http://www.shopbop.com/boutique-designer-boutique-accessories-sunglasses/br/v=1/2534374302159451.htm",
@@ -64,7 +64,7 @@ class MySpider(scrapy.Spider):
         #"http://www.shopbop.com/actions/designerindex/viewAlphabeticalDBDesigners.action",
 
         #"http://www.shopbop.com/ci/4/wedding/bridal-and-wedding-2013.html",
-        #http://www.shopbop.com/boutique-wedding-dresses/br/v=1/2534374302183381.htm
+        "http://www.shopbop.com/boutique-wedding-dresses/br/v=1/2534374302183381.htm",
         "http://www.shopbop.com/boutique-wedding-dresses-line/br/v=1/2534374302206018.htm",
         "http://www.shopbop.com/boutique-wedding-dresses-ball-gown/br/v=1/2534374302206020.htm",
         "http://www.shopbop.com/boutique-wedding-dresses-sheath/br/v=1/2534374302206021.htm",
@@ -73,7 +73,7 @@ class MySpider(scrapy.Spider):
 
         "http://www.shopbop.com/boutique-wedding-bridesmaid-dresses/br/v=1/2534374302183382.htm",
         "http://www.shopbop.com/boutique-wedding-guest/br/v=1/21502.htm",
-        # "http://www.shopbop.com/boutique-wedding-lingerie/br/v=1/2534374302183600.htm",
+        "http://www.shopbop.com/boutique-wedding-lingerie/br/v=1/2534374302183600.htm",
         "http://www.shopbop.com/boutique-wedding-lingerie-day/br/v=1/27411.htm",
         "http://www.shopbop.com/boutique-wedding-lingerie-night/br/v=1/27412.htm",
         "http://www.shopbop.com/boutique-wedding-shoes/br/v=1/2534374302183603.htm",
@@ -85,8 +85,8 @@ class MySpider(scrapy.Spider):
 
         "http://www.shopbop.com/boutique-editors-picks/br/v=1/2534374302205719.htm",
         "http://www.shopbop.com/boutiques-fashion-finds/br/v=1/28182.htm",
-
-        # "http://www.shopbop.com/boutique-holiday-gift-gifts-her/br/v=1/2534374302207761.htm",
+        "http://www.shopbop.com/boutiques-gift-boutique/br/v=1/2534374302207750.htm",
+        "http://www.shopbop.com/boutique-holiday-gift-gifts-her/br/v=1/2534374302207761.htm",
         "http://www.shopbop.com/boutique-holiday-gift-gifts-her-bags/br/v=1/2534374302207769.htm",
         "http://www.shopbop.com/boutique-holiday-gift-gifts-her-jewelry/br/v=1/2534374302207771.htm",
         "http://www.shopbop.com/boutique-holiday-gift-gifts-her-accessories/br/v=1/2534374302207768.htm",
@@ -96,7 +96,7 @@ class MySpider(scrapy.Spider):
         "http://www.shopbop.com/boutique-holiday-gift-gifts-home/br/v=1/2534374302207757.htm",
         "http://www.shopbop.com/boutique-holiday-gift-gifts-100-under/br/v=1/2534374302207753.htm",
 
-        # http://www.shopbop.com/boutiques-activewear-boutique/br/v=1/13924.htm
+        "http://www.shopbop.com/boutiques-activewear-boutique/br/v=1/13924.htm",
 
         "http://www.shopbop.com/boutiques-activewear-tops/br/v=1/13931.htm",
         "http://www.shopbop.com/boutiques-activewear-bottoms/br/v=1/19552.htm",
@@ -105,8 +105,8 @@ class MySpider(scrapy.Spider):
         "http://www.shopbop.com/boutiques-activewear-bags/br/v=1/13925.htm",
         "http://www.shopbop.com/boutiques-activewear-accessories/br/v=1/13932.htm",
 
-        # "http://www.shopbop.com/one/br/v=1/2534374302182521.htm"
-        # http://www.shopbop.com/one-clothing/br/v=1/2534374302182642.htm
+        "http://www.shopbop.com/one/br/v=1/2534374302182521.htm",
+        "http://www.shopbop.com/one-clothing/br/v=1/2534374302182642.htm",
 
         "http://www.shopbop.com/one-clothing-jeans/br/v=1/2534374302182646.htm",
         "http://www.shopbop.com/one-clothing-dresses/br/v=1/2534374302182963.htm",
@@ -118,11 +118,12 @@ class MySpider(scrapy.Spider):
         "http://www.shopbop.com/one-clothing-tops/br/v=1/2534374302182648.htm",
         "http://www.shopbop.com/one-clothing-vests/br/v=1/2534374302196729.htm",
 
-        # http://www.shopbop.com/one-shoes/br/v=1/2534374302182643.htm
+        "http://www.shopbop.com/one-shoes/br/v=1/2534374302182643.htm",
+        "http://www.shopbop.com/one-shoes-winter-boots/br/v=1/33344.htm",
         "http://www.shopbop.com/one-shoes-booties/br/v=1/2534374302184426.htm",
         "http://www.shopbop.com/one-shoes-flats/br/v=1/2534374302187401.htm",
 
-        #http://www.shopbop.com/one-bags/br/v=1/2534374302184421.htm
+        "http://www.shopbop.com/one-bags/br/v=1/2534374302184421.htm",
         "http://www.shopbop.com/one-bags-backpacks/br/v=1/2534374302207838.htm",
         "http://www.shopbop.com/one-bags-black-handbags/br/v=1/2534374302196100.htm",
         "http://www.shopbop.com/one-bags-clutches/br/v=1/2534374302199760.htm",
@@ -131,7 +132,7 @@ class MySpider(scrapy.Spider):
         "http://www.shopbop.com/one-bags-shoulder/br/v=1/2534374302184423.htm",
         "http://www.shopbop.com/one-bags-totes/br/v=1/2534374302184430.htm",
 
-        # http://www.shopbop.com/one-accessories/br/v=1/2534374302182960.htm
+        "http://www.shopbop.com/one-accessories/br/v=1/2534374302182960.htm",
         "http://www.shopbop.com/one-accessories-belts/br/v=1/27338.htm",
         "http://www.shopbop.com/one-accessories-hats/br/v=1/21260.htm",
         "http://www.shopbop.com/one-accessories-jewelry/br/v=1/2534374302182961.htm",
