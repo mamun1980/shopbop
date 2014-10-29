@@ -7,25 +7,37 @@ class ClothProductSpider(CrawlSpider):
     name = "product_shoes"
     allowed_domains = ["www.shopbop.com"]
     start_urls = [
+        
+        "http://www.shopbop.com/shoes-booties/br/v=1/2534374302112431.htm",
         "http://www.shopbop.com/shoes-booties-flat/br/v=1/2534374302159515.htm",
         "http://www.shopbop.com/shoes-booties-heeled/br/v=1/2534374302153373.htm",
         "http://www.shopbop.com/shoes-booties-lace/br/v=1/2534374302183263.htm",
+
+        "http://www.shopbop.com/shoes-boots/br/v=1/2534374302112432.htm",
         "http://www.shopbop.com/shoes-boots-flat/br/v=1/2534374302112433.htm",
         "http://www.shopbop.com/shoes-boots-heeled/br/v=1/2534374302153371.htm",
         "http://www.shopbop.com/shoes-boots-knee-high/br/v=1/2534374302153374.htm",
         "http://www.shopbop.com/shoes-boots-over-knee/br/v=1/13465.htm",
+
+        "http://www.shopbop.com/shoes-flats/br/v=1/2534374302112436.htm",
         "http://www.shopbop.com/shoes-flats-ballet/br/v=1/2534374302201780.htm",
         "http://www.shopbop.com/shoes-flats-espadrilles/br/v=1/27787.htm",
         "http://www.shopbop.com/shoes-flats-loafers/br/v=1/2534374302201781.htm",
         "http://www.shopbop.com/shoes-flats-oxfords/br/v=1/2534374302201782.htm",
         "http://www.shopbop.com/shoes-flats-slippers/br/v=1/2534374302201880.htm",
+
+        "http://www.shopbop.com/shoes-pumps/br/v=1/2534374302112441.htm",
         "http://www.shopbop.com/shoes-pumps-heels-open-toe/br/v=1/2534374302159460.htm",
         "http://www.shopbop.com/shoes-pumps-heels-platforms/br/v=1/2534374302159453.htm",
+
         "http://www.shopbop.com/shoes-rain-boots/br/v=1/13490.htm",
+        "http://www.shopbop.com/shoes-sandals/br/v=1/2534374302112442.htm",
         "http://www.shopbop.com/shoes-sandals-flat/br/v=1/2534374302112443.htm",
         "http://www.shopbop.com/shoes-sandals-flip-flops/br/v=1/2534374302112437.htm",
         "http://www.shopbop.com/shoes-sandals-high-heeled/br/v=1/2534374302112444.htm",
         "http://www.shopbop.com/shoes-sandals-platforms/br/v=1/2534374302159496.htm",
+
+        "http://www.shopbop.com/shoes-sneakers/br/v=1/2534374302112446.htm",
         "http://www.shopbop.com/shoes-sneakers-high-top/br/v=1/31213.htm",
         "http://www.shopbop.com/shoes-sneakers-low-top/br/v=1/31212.htm",
         "http://www.shopbop.com/shoes-sneakers-slip/br/v=1/31214.htm",
@@ -36,6 +48,7 @@ class ClothProductSpider(CrawlSpider):
         "http://www.shopbop.com/shoes-trend-combat-moto/br/v=1/13478.htm",
         "http://www.shopbop.com/shoes-trend-nude/br/v=1/13485.htm",
         "http://www.shopbop.com/shoes-trend-shearling-fur/br/v=1/33281.htm",
+
     ]
 
     rules = (

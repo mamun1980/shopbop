@@ -12,7 +12,7 @@ class ClothProductSpider(CrawlSpider):
     start_urls = [
         "http://www.shopbop.com/clothing-activewear/br/v=1/2534374302053051.htm",
 
-        #"http://www.shopbop.com/clothing-dresses/br/v=1/2534374302063518.htm",
+        "http://www.shopbop.com/clothing-dresses/br/v=1/2534374302063518.htm",
 
         "http://www.shopbop.com/clothing-dresses-casual/br/v=1/2534374302072409.htm",
         "http://www.shopbop.com/clothing-dresses-day-night/br/v=1/2534374302063657.htm",
@@ -29,7 +29,7 @@ class ClothProductSpider(CrawlSpider):
         "http://www.shopbop.com/clothing-dresses-longsleeve/br/v=1/2534374302180265.htm",
         "http://www.shopbop.com/dresses-designer-boutique/br/v=1/2534374302123309.htm",
 
-        # "http://www.shopbop.com/clothing-jackets-coats/br/v=1/2534374302066271.htm",
+        "http://www.shopbop.com/clothing-jackets-coats/br/v=1/2534374302066271.htm",
 
         "http://www.shopbop.com/clothing-jackets-coats-blazers/br/v=1/2534374302066388.htm",
         "http://www.shopbop.com/clothing-jackets-coats/br/v=1/2534374302196584.htm",
@@ -42,7 +42,7 @@ class ClothProductSpider(CrawlSpider):
         "http://www.shopbop.com/jackets-designer-boutique/br/v=1/2534374302124042.htm",
 
 
-        # "http://www.shopbop.com/clothing-jeans/br/v=1/2534374302064814.htm",
+        "http://www.shopbop.com/clothing-jeans/br/v=1/2534374302064814.htm",
         "http://www.shopbop.com/clothing-jeans-ankle/br/v=1/32663.htm",
         "http://www.shopbop.com/clothing-denim-boot-cut-jeans/br/v=1/2534374302064887.htm",
         "http://www.shopbop.com/clothes-denim-boyfriend-jeans/br/v=1/2534374302121211.htm",
@@ -66,12 +66,12 @@ class ClothProductSpider(CrawlSpider):
         "http://www.shopbop.com/clothing-denim-shorts/br/v=1/2534374302073699.htm",
         "http://www.shopbop.com/clothes-denim-designer-boutique/br/v=1/2534374302126533.htm",
 
-        #"http://www.shopbop.com/clothing-jumpsuits-rompers/br/v=1/2534374302034081.htm",
+        "http://www.shopbop.com/clothing-jumpsuits-rompers/br/v=1/2534374302034081.htm",
         "http://www.shopbop.com/clothing-jumpsuits-rompers/br/v=1/32661.htm",
         "http://www.shopbop.com/clothing-jumpsuits-rompers/br/v=1/32662.htm",
 
-        # "http://www.shopbop.com/clothing-lingerie-sleepwear/br/v=1/2534374302049464.htm",
-        # "http://www.shopbop.com/clothing-lingerie-sleepwear-bras/br/v=1/2534374302066122.htm",
+        "http://www.shopbop.com/clothing-lingerie-sleepwear/br/v=1/2534374302049464.htm",
+        "http://www.shopbop.com/clothing-lingerie-sleepwear-bras/br/v=1/2534374302066122.htm",
         "http://www.shopbop.com/clothing-lingerie-bras-bralette/br/v=1/33186.htm",
         "http://www.shopbop.com/clothing-lingerie-bras-convertible/br/v=1/33187.htm",
         "http://www.shopbop.com/clothing-lingerie-bras-push/br/v=1/33188.htm",
@@ -84,6 +84,7 @@ class ClothProductSpider(CrawlSpider):
         "http://www.shopbop.com/clothing-lingerie-chemises-slips/br/v=1/2534374302066120.htm",
         "http://www.shopbop.com/clothing-lingerie-garters/br/v=1/2534374302186020.htm",
 
+        "http://www.shopbop.com/clothing-lingerie-sleepwear-panties/br/v=1/2534374302066119.htm",
         "http://www.shopbop.com/clothing-lingerie-panties-bikini-brief/br/v=1/33194.htm",
         "http://www.shopbop.com/clothing-lingerie-panties-sets/br/v=1/33195.htm",
         "http://www.shopbop.com/clothing-lingerie-panties-thong/br/v=1/33196.htm",
@@ -95,6 +96,7 @@ class ClothProductSpider(CrawlSpider):
         "http://www.shopbop.com/lingerie-designer-boutique/br/v=1/2534374302123294.htm",
         "http://www.shopbop.com/clothing-maternity/br/v=1/2534374302172178.htm",
 
+        "http://www.shopbop.com/clothing-pants-leggings/br/v=1/2534374302024611.htm",
         "http://www.shopbop.com/clothing-pants-boot-cut-flare/br/v=1/2534374302180154.htm",
         "http://www.shopbop.com/clothing-pants-cropped/br/v=1/2534374302070476.htm",
         "http://www.shopbop.com/clothing-pants-high-waisted/br/v=1/2534374302196585.htm",
@@ -108,10 +110,12 @@ class ClothProductSpider(CrawlSpider):
         "http://www.shopbop.com/clothing-pants-wide-leg/br/v=1/2534374302067313.htm",
         "http://www.shopbop.com/pants-designer-boutique/br/v=1/2534374302123357.htm",
 
+        "http://www.shopbop.com/clothing-shorts/br/v=1/2534374302024684.htm",
         "http://www.shopbop.com/clothing-shorts-denim/br/v=1/2534374302079172.htm",
         "http://www.shopbop.com/clothing-shorts-knee-length/br/v=1/2534374302067140.htm",
         "http://www.shopbop.com/clothing-shorts-short/br/v=1/2534374302067141.htm",
 
+        "http://www.shopbop.com/clothing-skirts/br/v=1/2534374302024619.htm",
         "http://www.shopbop.com/skirts-mini/br/v=1/2534374302149758.htm",
         "http://www.shopbop.com/clothing-skirts-knee-length/br/v=1/2534374302070727.htm",
         "http://www.shopbop.com/clothing-skirts-midi/br/v=1/2534374302182060.htm",
@@ -123,6 +127,7 @@ class ClothProductSpider(CrawlSpider):
 
         "http://www.shopbop.com/clothing-suit-separates/br/v=1/2534374302063184.htm",
 
+        "http://www.shopbop.com/clothing-sweaters-knits/br/v=1/2534374302024636.htm",
         "http://www.shopbop.com/clothing-sweaters-knits-cardigans/br/v=1/2534374302069137.htm",
         "http://www.shopbop.com/sweaters-knits-cashmere/br/v=1/2534374302069136.htm",
         "http://www.shopbop.com/clothing-sweaters-cowlneck/br/v=1/2534374302192440.htm",
@@ -132,12 +137,15 @@ class ClothProductSpider(CrawlSpider):
         "http://www.shopbop.com/clothing-sweaters-knits-necks/br/v=1/2534374302069130.htm",
         "http://www.shopbop.com/sweaters-knits-designer-boutique/br/v=1/2534374302123878.htm",
 
+        "http://www.shopbop.com/clothing-swimwear/br/v=1/2534374302024726.htm",
+        "http://www.shopbop.com/clothing-swimwear-bikinis/br/v=1/2534374302067620.htm",
         "http://www.shopbop.com/clothes-swimwear-bikinis-tops/br/v=1/31001.htm",
         "http://www.shopbop.com/clothes-swimwear-bikinis-bottoms/br/v=1/31002.htm",
         "http://www.shopbop.com/clothes-swimwear-bikinis-sets/br/v=1/31003.htm",
         "http://www.shopbop.com/clothes-swimwear-cover-ups/br/v=1/2534374302067619.htm",
         "http://www.shopbop.com/clothes-swimwear-one-pieces/br/v=1/2534374302067618.htm",
 
+        "http://www.shopbop.com/clothing-tops/br/v=1/2534374302060562.htm",
         "http://www.shopbop.com/clothing-tops-blouses/br/v=1/2534374302060711.htm",
         "http://www.shopbop.com/clothes-tops-button-down-shirts/br/v=1/2534374302150953.htm",
         "http://www.shopbop.com/clothing-tops-crop/br/v=1/32075.htm",
@@ -145,10 +153,12 @@ class ClothProductSpider(CrawlSpider):
         "http://www.shopbop.com/clothing-tops-night-out/br/v=1/2534374302072624.htm",
         "http://www.shopbop.com/clothing-tops-sweatshirts-hoodies/br/v=1/2534374302060709.htm",
         "http://www.shopbop.com/clothing-tops-tank/br/v=1/2534374302060705.htm",
+        "http://www.shopbop.com/clothing-tops-short-sleeve-tees/br/v=1/2534374302060706.htm",
         "http://www.shopbop.com/clothing-tops-tees-short-sleeve-crew-neck/br/v=1/32061.htm",
         "http://www.shopbop.com/clothing-tops-tees-short-sleeve-scoop-neck/br/v=1/32062.htm",
         "http://www.shopbop.com/clothing-tops-tees-short-sleeve-neck/br/v=1/32063.htm",
 
+        "http://www.shopbop.com/clothing-tops-long-sleeve-tees/br/v=1/2534374302060707.htm",
         "http://www.shopbop.com/clothing-tops-tees-long-sleeve-crew-neck/br/v=1/32072.htm",
         "http://www.shopbop.com/clothing-tops-tees-long-sleeve-scoop-neck/br/v=1/32073.htm",
         "http://www.shopbop.com/clothing-tops-tees-long-sleeve-neck/br/v=1/32074.htm",
@@ -158,7 +168,8 @@ class ClothProductSpider(CrawlSpider):
 
         "http://www.shopbop.com/clothing-vests/br/v=1/2534374302196580.htm",
         "http://www.shopbop.com/clothing-kids-baby/br/v=1/28501.htm",
-]
+        
+    ]
 
     rules = (        
         
