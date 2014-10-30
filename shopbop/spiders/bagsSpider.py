@@ -8,7 +8,7 @@ class ClothProductSpider(CrawlSpider):
     name = "product_bags"
     allowed_domains = ["www.shopbop.com"]
     start_urls = [
-        # "http://www.shopbop.com/bags/br/v=1/2534374302024667.htm",
+        "http://www.shopbop.com/bags/br/v=1/2534374302024667.htm",
         "http://www.shopbop.com/bags-baby/br/v=1/2534374302087713.htm",
         "http://www.shopbop.com/bags-backpacks/br/v=1/2534374302055388.htm",
         "http://www.shopbop.com/bags-beach/br/v=1/2534374302145731.htm",

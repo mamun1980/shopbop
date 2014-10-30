@@ -9,6 +9,7 @@ class ClothProductSpider(CrawlSpider):
     start_urls = [
         "http://www.shopbop.com/new-to-sale/br/v=1/2534374302175438.htm",
 
+        "http://www.shopbop.com/sale-clothing/br/v=1/2534374302155173.htm",
         "http://www.shopbop.com/sale-clothes-denim-all-jeans/br/v=1/2534374302076379.htm",
         "http://www.shopbop.com/sale-clothes-denim-boot-cut-jeans/br/v=1/2534374302076380.htm",
         "http://www.shopbop.com/sale-clothes-denim-boyfriend-jeans/br/v=1/2534374302127693.htm",
@@ -151,15 +152,13 @@ class ClothProductSpider(CrawlSpider):
 
         "http://www.shopbop.com/sale-designer-boutique/br/v=1/17752.htm",
 
-        #"http://www.shopbop.com/sale-bags/br/v=1/2534374302076306.htm",
-
+        "http://www.shopbop.com/sale-bags/br/v=1/2534374302076306.htm",
         "http://www.shopbop.com/sale-bags-backpacks/br/v=1/2534374302076307.htm",
         "http://www.shopbop.com/sale-bags-beach/br/v=1/2534374302161924.htm",
         "http://www.shopbop.com/sale-bags-black-handbags/br/v=1/2534374302122243.htm",
         "http://www.shopbop.com/sale-bags-clutches/br/v=1/2534374302076343.htm",
         "http://www.shopbop.com/sale-bags-cosmetic-pouches/br/v=1/2534374302076428.htm",
         "http://www.shopbop.com/sale-bags-cross-body/br/v=1/2534374302076403.htm",
-        "http://www.shopbop.com/sale-bags/br/v=1/2534374302076306.htm",
         "http://www.shopbop.com/sale-bags-hobos/br/v=1/2534374302150472.htm",
         "http://www.shopbop.com/sale-bags-oversized/br/v=1/2534374302161932.htm",
         "http://www.shopbop.com/sale-bags-satchels/br/v=1/2534374302178488.htm",
@@ -168,8 +167,7 @@ class ClothProductSpider(CrawlSpider):
         "http://www.shopbop.com/sale-bags-wallets/br/v=1/2534374302076458.htm",
         "http://www.shopbop.com/sale-bags-weekend/br/v=1/2534374302076460.htm",
 
-        #"http://www.shopbop.com/sale-shoes/br/v=1/2534374302076317.htm",
-
+        "http://www.shopbop.com/sale-shoes/br/v=1/2534374302076317.htm",
         "http://www.shopbop.com/sale-shoes-booties/br/v=1/2534374302076318.htm",
         "http://www.shopbop.com/sale-shoes-booties-flat/br/v=1/2534374302161944.htm",
         "http://www.shopbop.com/sale-shoes-booties-heeled/br/v=1/2534374302161942.htm",
@@ -212,6 +210,7 @@ class ClothProductSpider(CrawlSpider):
         "http://www.shopbop.com/sale-shoes-trend-nude/br/v=1/32151.htm",
         "http://www.shopbop.com/sale-shoes-trend-shearling-fur/br/v=1/33332.htm",
 
+        "http://www.shopbop.com/sale-accessories/br/v=1/2534374302076305.htm",
         "http://www.shopbop.com/sale-accessories-jewelry/br/v=1/2534374302076320.htm",
         "http://www.shopbop.com/sale-accessories-jewelry-bracelets/br/v=1/2534374302076321.htm",
         "http://www.shopbop.com/sale-accessories-jewelry-charms/br/v=1/2534374302076341.htm",
